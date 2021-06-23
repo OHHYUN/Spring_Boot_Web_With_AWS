@@ -1,4 +1,7 @@
 spring:
+  h2:
+    console:
+      enabled: true
   jpa:
     hibernate:
       ddl-auto: create
@@ -9,5 +12,7 @@ spring:
 #        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
   profiles:
     include: oauth
+  session:
+    store-type: jdbc
 logging.level:
   org.hibernate.SQL: debug
