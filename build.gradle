@@ -27,6 +27,7 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
     testCompileOnly 'org.assertj:assertj-core:3.11.1'
     compile 'org.springframework.session:spring-session-jdbc'
+    testCompile 'org.springframework.security:spring-security-test'
 }
 
 test {
