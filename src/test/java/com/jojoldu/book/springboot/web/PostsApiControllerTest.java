@@ -125,7 +125,7 @@ class PostsApiControllerTest {
 //        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
 //        assertThat(responseEntity.getBody()).isGreaterThan(0L);
 
-        Posts all = postsRepository.findById(1L).orElseGet(Posts::new);
+        Posts all = postsRepository.findById(2L).orElseGet(Posts::new);
 //        Posts post = all.orElseGet(Posts::new);
         assertThat(all.getTitle()).isEqualTo(expectedTitle);
         assertThat(all.getContent()).isEqualTo(expectedContent);
