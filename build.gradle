@@ -28,6 +28,7 @@ dependencies {
     testCompileOnly 'org.assertj:assertj-core:3.11.1'
     compile 'org.springframework.session:spring-session-jdbc'
     testCompile 'org.springframework.security:spring-security-test'
+    compile 'org.mariadb.jdbc:mariadb-java-client'
 }
 
 test {
